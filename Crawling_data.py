@@ -54,7 +54,7 @@ driver.quit()
 file_name = './companies_name.txt'
 companies_name_list = set(companies_name_list)      # 중복된 회사명 제거
 
-with open(file_name, 'w+') as file:
+with open(file_name, 'w+', encoding='utf-8') as file:
     file.write('\n'.join(companies_name_list))
 
 # 자기소개서 데이터를 csv 파일로
@@ -64,4 +64,4 @@ from sklearn.utils import shuffle
 interview_data = pd.DataFrame(data, columns=['Q', 'A'])     # 크롤링한 데이터를 데이터프레임으로 변환
 interview_data = shuffle(interview_data)       # 데이터프레임을 랜덤하게 섞음
 
-interview_data.to_csv('Interview_Data.csv', index=False)
+interview_data.to_csv('Interview_Data.csv', index=False, encoding='utf-8')
