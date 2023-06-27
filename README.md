@@ -3,7 +3,18 @@
 사용한 데이터셋은 잡코리아에서 크롤링한 자기소개서 데이터이고, 모델은 KoGPT2와 파라미터 수를 변동할 수 있게 만든 Transfomers의 GPT모델을 사용한다.
 
 ## 1. 알고리즘 순서도
-
+<table border ="0">
+    <tr>
+      <td><img src="https://github.com/CaFeCoKe/Interview_Writer/assets/86700191/6ed01d46-02c6-4ec7-9f67-4e54c7be627f" width="100%" height="100%"></td>
+      <td><img src="https://github.com/CaFeCoKe/Interview_Writer/assets/86700191/8902b878-b4bf-4c61-b637-3c0654249828" width="100%" height="100%"></td>
+      <td><img src="https://github.com/CaFeCoKe/Interview_Writer/assets/86700191/445eaa8d-9f43-4072-bd33-15f76b66b2f7" width="100%" height="100%"></td>
+    </tr>
+    <tr>
+      <td align ="center">Crawling_data.py</td>
+      <td align ="center">Interview_Writer.ipynb</td>
+      <td align ="center">Interview_Writer_KoGPT2.ipynb</td>
+    </tr>
+    </table>
 
 ## 2. 결과
 - 파라미터(hidden states) 개수에 따른 Loss값 변화 (Adam optimizer, 50 epochs, 1e-4 learning rate) <br>
